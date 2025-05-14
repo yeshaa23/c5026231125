@@ -7,4 +7,8 @@ use Illuminate\Http\Request;
 class Coba extends Controller
 {
     //
+    public function helloword()
+    {
+        return view('blog');
+    }
 }
