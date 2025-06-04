@@ -35,7 +35,7 @@
                     <a href="{{ url('/js2') }}" class="btn btn-outline-secondary m-2" target="_blank">JS2</a>
                     <a href="{{ url('/tugas2') }}" class="btn btn-outline-secondary m-2" target="_blank">Linktree</a>
                     <a href="{{ url('/jsets2') }}" class="btn btn-outline-secondary m-2" target="_blank">Contact Form ETS</a>
-                    <a href="{{ url('/index') }}" class="btn btn-outline-secondary m-2" target="_blank">ETS</a>
+                    <a href="{{ url('/ets') }}" class="btn btn-outline-secondary m-2" target="_blank">ETS</a>
                 </div>
             </div>
         </div>
