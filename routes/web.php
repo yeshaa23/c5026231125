@@ -5,6 +5,7 @@ use App\Http\Controllers\Coba;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\BisController;
 
 //kalo di java use itu mirip import
 //import java.io.*;
@@ -79,9 +80,7 @@ Route::get('/ets', function () {
 });
 
 // Route::get('dosen',[Coba::class, 'index']);
-
 // Route::get('/pegawai/{nama}', [PegawaiController::class, 'index']);
-
 // Route::get('/formulir', [PegawaiController::class, 'formulir']); //halaman isian form
 // Route::post('/formulir/proses', [PegawaiController::class, 'proses']); //action form
 
@@ -98,3 +97,12 @@ Route::get('/pegawai/edit/{id}',[PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}',[PegawaiDBController::class, 'hapus']);
 Route::get('/pegawai/cari',[PegawaiDBController::class, 'cari']);
+
+//crud bis
+Route::get('/bis', [BisController::class, 'index']);
+Route::get('/bis/tambah', [BisController::class, 'tambah']);
+Route::post('/bis/store', [BisController::class, 'store']);
+Route::get('/bis/edit/{id}', [BisController::class, 'edit']);
+Route::post('/bis/update/{id}', [BisController::class, 'update']);
+Route::get('/bis/hapus/{id}', [BisController::class, 'hapus']);
+Route::get('/bis/cari', [BisController::class, 'cari']);

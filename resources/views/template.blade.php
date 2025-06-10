@@ -12,9 +12,21 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <style>
+        body {
+            background-color: #f0f8ffdc;
+        }
+
         .jumbotron {
-            background-color: #9de2e2;
+            background: linear-gradient(to right, #94e6fc, #0072ff); /* Gradasi biru */
             height: 100px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .jumbotron h1 {
+            font-size: 30px;
         }
     </style>
 </head>
@@ -33,7 +45,7 @@
                 <a class="nav-link" href="/pegawai">Pegawai</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Tugas CRUD</a>
+                <a class="nav-link" href="/bis">Tugas CRUD</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">EAS</a>

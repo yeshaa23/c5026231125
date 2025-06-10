@@ -16,7 +16,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
 
-        
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -99,7 +99,7 @@
 
         <!-- Signup-->
         <section class="signup-section" id="signup">
-            <div class="container px-4 px-lg-5" > 
+            <div class="container px-4 px-lg-5" >
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
@@ -109,12 +109,12 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Footer-->
         <div class="header">
             <h1>Contacts</h1>
             </div>
-        
+
             <div class="contact-section container">
                 <div class="row">
                 <!-- form sama teks -->
@@ -133,9 +133,9 @@
                     <textarea class="form-control" id="pesan" placeholder="Pesan" rows="4"></textarea>
                     <button type="submit" class="btn btn-primary">Kirim Pesan</button>
                 </form>
-                
+
             </div>
-        
+
                 <!-- peta sama kontak -->
                 <div class="col-md-6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18..."></iframe>
@@ -147,7 +147,7 @@
                     </div>
                 </div>
             </div>
-        
+
             <!-- footer -->
             <div class="footer container-fluid">
             <div class="row justify-content-center">
@@ -170,41 +170,41 @@
             </div>
             </div>
         </div>
-        
+
             <script>
             function validateForm(event) {
-                event.preventDefault(); 
-            
+                event.preventDefault();
+
                 var name = document.getElementById("name").value;
                 var email = document.getElementById("email").value;
                 var telp = document.getElementById("telp").value;
                 var pesan = document.getElementById("pesan").value;
                 var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            
+
                 if (!name || !email || !telp || !pesan) {
                     swal("Gagal!", "Semua field harus diisi!", "error");
                     return false;
                 }
-            
+
                 if (!emailPattern.test(email)) {
                     swal("Gagal!", "Format email tidak valid!", "error");
                     return false;
                 }
-            
+
                 if (isNaN(telp)) {
                 swal("Gagal!", "Nomor telepon harus terdiri dari angka!", "error");
                 return false;
                 }
-            
+
                 swal("Terkirim!", "Pesan Anda berhasil dikirim!", "success")
                     .then(() => {
                         document.getElementById("contactForm").reset();
                     });
-            
+
                 return true;
             }
-            </script>    
-        
+            </script>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
