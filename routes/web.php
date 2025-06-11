@@ -6,6 +6,8 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\BisController;
+use App\Http\Controllers\KeranjangBelanjaController;
+use App\Http\Controllers\PageCounterController;
 
 //kalo di java use itu mirip import
 //import java.io.*;
@@ -106,3 +108,12 @@ Route::get('/bis/edit/{id}', [BisController::class, 'edit']);
 Route::post('/bis/update/{id}', [BisController::class, 'update']);
 Route::get('/bis/hapus/{id}', [BisController::class, 'hapus']);
 Route::get('/bis/cari', [BisController::class, 'cari']);
+
+//crud keranjang belanja
+Route::get('/keranjangbelanja', [KeranjangBelanjaController::class, 'index']);
+Route::get('/keranjangbelanja/beli', [KeranjangBelanjaController::class, 'beli']);
+Route::post('/keranjangbelanja/store', [KeranjangBelanjaController::class, 'store']);
+Route::get('/keranjangbelanja/hapus/{ID}', [KeranjangBelanjaController::class, 'hapus']);
+
+// Router pagecounter
+Route::get('/pagecounter', [PageCounterController::class, 'show']);
