@@ -11,8 +11,7 @@
     </form>
 
     <div class="table-responsive">
-        <table class="table table-bordered mt-2">
-            <thead class="thead-dark">
+        <table class="table table-bordered table-striped mt-2">
                 <tr>
                     <th>Merk Bis</th>
                     <th>Harga</th>

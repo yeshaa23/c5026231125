@@ -12,7 +12,7 @@
 	</form>
 	<br/>
 
-	<table class="table table striped">
+	<table class="table table-striped table-bordered mt-3">
 		<tr>
 			<th>Nama</th>
 			<th>Jabatan</th>

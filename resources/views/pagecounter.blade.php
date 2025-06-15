@@ -1,31 +1,21 @@
 @extends('template')
 
 @section('content')
-    <title>5026231125 Ayesha Hana Azkiya</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 30px;
-            background-color: #f5f5f5;
-        }
-
         .counter {
-            background-color: #dff0d8;
-            color: #3c763d;
+            background-color: #d4edda; /* hijau lembut */
+            color: #155724;
             border-radius: 5px;
-            padding: 20px;
+            padding: 20px 40px;
             font-size: 20px;
             width: fit-content;
-            margin: auto;
+            margin: 60px auto;
             border: 1px solid #c3e6cb;
-            position: relative;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
-
     </style>
-<body>
 
-    <div class="counter m-2">
+    <div class="counter">
         Anda Pengunjung ke: <strong>{{ $jumlah }}</strong>
     </div>
-
 @endsection

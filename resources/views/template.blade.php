@@ -13,20 +13,43 @@
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <style>
         body {
-            background-color: #f0f8ffdc;
+            background-color: #c5f5f5; /* Tosca muda konsisten */
         }
 
         .jumbotron {
-            background: linear-gradient(to right, #94e6fc, #0072ff); /* Gradasi biru */
+            background: linear-gradient(to right, #1abc9c, #007bff); /* Tosca ke biru */
             height: 100px;
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
+            border-radius: 5px;
         }
 
         .jumbotron h1 {
             font-size: 30px;
+            margin: 0;
+        }
+
+        .table {
+            border: 1px solid #dee2e6;
+        }
+
+        .table thead th {
+            background-color: #ffffff;
+            color: black;
+        }
+
+        .table tbody td {
+            color: black;
+        }
+
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #ffffff;
+        }
+
+        .table-striped tbody tr:nth-of-type(even) {
+            background-color: #e6f7ff;
         }
     </style>
 </head>
@@ -38,31 +61,31 @@
 
     <nav class="navbar navbar-expand-sm bg-light">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="/frontend">All Front End</a>
+            <li
+                class="nav-item"><a class="nav-link" href="/frontend">All Front End</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/pegawai">Pegawai</a>
+            <li
+                class="nav-item"><a class="nav-link" href="/pegawai">Pegawai</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/bis">Tugas CRUD</a>
+            <li
+                class="nav-item"><a class="nav-link" href="/bis">Tugas CRUD</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">EAS</a>
+            <li
+                class="nav-item"><a class="nav-link" href="#">EAS</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/keranjangbelanja">Latihan 1</a>
+            <li
+                class="nav-item"><a class="nav-link" href="/keranjangbelanja">Latihan 1</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/pagecounter">Latihan 2</a>
+            <li
+                class="nav-item"><a class="nav-link" href="/pagecounter">Latihan 2</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 3</a>
+            <li
+                class="nav-item"><a class="nav-link" href="/karyawan">Latihan 3</a>
             </li>
         </ul>
     </nav>
-    <br>
-    <div class="container">
+
+    <div class="container mt-4">
         @yield('content')
     </div>
 

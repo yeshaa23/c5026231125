@@ -5,6 +5,7 @@ use App\Http\Controllers\Coba;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\KaryawanDBController;
 use App\Http\Controllers\BisController;
 use App\Http\Controllers\KeranjangBelanjaController;
 use App\Http\Controllers\PageCounterController;
@@ -115,5 +116,13 @@ Route::get('/keranjangbelanja/beli', [KeranjangBelanjaController::class, 'beli']
 Route::post('/keranjangbelanja/store', [KeranjangBelanjaController::class, 'store']);
 Route::get('/keranjangbelanja/hapus/{ID}', [KeranjangBelanjaController::class, 'hapus']);
 
-// Router pagecounter
+// Route pagecounter
 Route::get('/pagecounter', [PageCounterController::class, 'show']);
+
+// Route karyawan
+Route::get('/karyawan', [KaryawanDBController::class, 'karyawan']);
+Route::get('/karyawan/tambahKaryawan', [KaryawanDBController::class, 'tambahKaryawan']);
+Route::post('/karyawan/storeKaryawan', [KaryawanDBController::class, 'storeKaryawan']);
+Route::get('/karyawan/editKaryawan/{ID}', [KaryawanDBController::class, 'editKaryawan']);
+Route::post('/karyawan/updateKaryawan', [KaryawanDBController::class, 'updateKaryawan']);
+Route::get('/karyawan/hapusKaryawan/{ID}', [KaryawanDBController::class, 'hapusKaryawan']);
