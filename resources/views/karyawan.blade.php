@@ -3,9 +3,7 @@
 @section('content')
 <h3 class="text-center">Data Karyawan</h3>
 <br/>
-<a href="/karyawan/tambahKaryawan" class="btn btn-primary"> + Tambah Karyawan Baru</a>
-<br/>
-<br/>
+
 <table class="table table-striped table-hover">
     <tr>
         <th>Kode Karyawan</th>
@@ -27,7 +25,6 @@
     </tr>
     @endforeach
 </table>
-
-<br/>
-{{ $karyawan->links() }}
+<a href="/karyawan/tambahKaryawan" class="btn btn-primary"> + Tambah Karyawan Baru</a>
+<div class ="d-flex justify-content-center mt-3">
 @endsection

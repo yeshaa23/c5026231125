@@ -39,6 +39,6 @@
                 @endforeach
             </tbody>
         </table>
-        {{ $keranjangbelanja->links() }}
+
     </div>
 @endsection

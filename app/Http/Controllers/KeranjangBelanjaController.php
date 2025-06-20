@@ -10,7 +10,7 @@ class KeranjangBelanjaController extends Controller
     // Tampilkan data keranjang dengan pagination
     public function index()
     {
-        $keranjangbelanja = DB::table('keranjangbelanja')->paginate(10);
+        $keranjangbelanja = DB::table('keranjangbelanja')->get();
         return view('index3', ['keranjangbelanja' => $keranjangbelanja]);
     }
 

@@ -18,3 +18,16 @@ public function show()
         return view('pagecounter', ['jumlah' => $jumlah]);
     }
 }
+
+// // increment
+//         $counter = DB::table('pagecounter')->where('ID', 1)->first();
+//         $jumlahpengunjung = 0;
+
+//         //update
+//         if ($counter) {
+//             $newjumlah = $counter->where('ID', 1)-> update(['jumlah'=> $newjumlah]);
+//             $jumlahpengunjung = $newjumlah;
+//         }
+
+//         // view
+//         return view('pagecounter', ['jumlah' => $jumlahpengunjung]);

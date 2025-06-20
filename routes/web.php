@@ -9,6 +9,7 @@ use App\Http\Controllers\KaryawanDBController;
 use App\Http\Controllers\BisController;
 use App\Http\Controllers\KeranjangBelanjaController;
 use App\Http\Controllers\PageCounterController;
+use App\Http\Controllers\MyKaryawanController;
 
 //kalo di java use itu mirip import
 //import java.io.*;
@@ -126,3 +127,9 @@ Route::post('/karyawan/storeKaryawan', [KaryawanDBController::class, 'storeKarya
 Route::get('/karyawan/editKaryawan/{ID}', [KaryawanDBController::class, 'editKaryawan']);
 Route::post('/karyawan/updateKaryawan', [KaryawanDBController::class, 'updateKaryawan']);
 Route::get('/karyawan/hapusKaryawan/{ID}', [KaryawanDBController::class, 'hapusKaryawan']);
+
+// Route eas
+Route::get('/eas', [MyKaryawanController::class, 'index']);
+Route::get('/eas/view/{kodepegawai}', [MyKaryawanController::class, 'view']);
+Route::get('/eas/edit/{kodepegawai}', [MyKaryawanController::class, 'edit']);
+Route::post('/eas/update', [MyKaryawanController::class, 'update']);
